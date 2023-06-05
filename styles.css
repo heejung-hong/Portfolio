@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+nav {
+    background-color: goldenrod;
+}
+
+footer {
+    background-color: goldenrod;
+}
