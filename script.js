@@ -1,13 +1,12 @@
 
 
 
-// Event listener for Footer Icons
-// const iconLinks = document.querySelector('#linkicon')
-
-// iconLinks.addEventListener("mouseover", function(e) {
-//     alert('Check out Heejung\'s Linkedin page')
-// })
+// DOM for Footer Icons
+document.getElementById('linkicon').onclick = function() {
+    location.href = "https://www.linkedin.com/in/heejung-hong-324720b5/";
+};
 
 document.getElementById('giticon').onclick = function() {
     location.href = "https://github.com/heejung1180";
 };
+
