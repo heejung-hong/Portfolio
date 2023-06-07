@@ -5,12 +5,28 @@
 
 body {
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+p {
+    font-size: 30px;
 }
 
 .navbar {
     background-color: goldenrod;
+    border-bottom: 2px solid black;
 }
 
 footer {
     background-color: goldenrod;
+    border-top: 2px solid black;
+    
+    
 }
