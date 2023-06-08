@@ -1,4 +1,41 @@
-#resumepdf {
-    width: 85%;
-    height: 975px;
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: lemonchiffon;
+    border-bottom: 2px solid dimgray;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+body {
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+h1 {
+    padding-top: 100px;
+}
+
+.space {
+    height: 900px;
+}
+
+footer {
+    background-color: lemonchiffon;
+    border-top: 2px solid dimgray;
+    height: 70px;
+    text-align: center;
+}
+
+#linkicon, #giticon {
+    padding-top: 10px;
+    height: 50px; 
 }

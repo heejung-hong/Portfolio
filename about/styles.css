@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: lemonchiffon;
+    border-bottom: 2px solid dimgray;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+body {
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+h1 {
+    padding-top: 100px;
+}
+
+p {
+    font-size: 30px;
+    height: 200px;
+}
+
+.img-fluid {
+    border: 2px solid dimgray;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: lemonchiffon;
+    border-top: 2px solid dimgray;
+    height: 70px;
+    text-align: center;
+}
+
+#linkicon, #giticon {
+    padding-top: 10px;
+    height: 50px; 
+}
