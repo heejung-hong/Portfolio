@@ -15,11 +15,11 @@ let elements = document.getElementsByClassName('myElement');
 for (let i = 0; i < elements.length; i++) {
   elements[i].onmouseover = function() {
     console.log(elements[i])
-    elements[i].style.color = 'red';
+    elements[i].style.background = 'lavender';
   }
   elements[i].onmouseout = function() {
     console.log(elements[i])
-    elements[i].style.color = 'black';
+    elements[i].style.background = 'none';
   }
 }
 

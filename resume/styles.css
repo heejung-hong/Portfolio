@@ -18,11 +18,24 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    font-family: 'Abril Fatface', cursive;
 }
 
 h1 {
     padding-top: 100px;
 }
+
+#respdf {
+    font-family: 'Text Me One', sans-serif;
+    background-color: lightcyan;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+
 
 .space {
     height: 900px;
@@ -33,6 +46,7 @@ footer {
     border-top: 2px solid dimgray;
     height: 70px;
     text-align: center;
+    
 }
 
 #linkicon, #giticon {

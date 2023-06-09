@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    font-family: 'Abril Fatface', cursive;
 }
 
 h1 {
@@ -24,6 +25,12 @@ h1 {
 
 p {
     font-size: 30px;
+    font-family: 'Text Me One', sans-serif;
+}
+
+#profile {
+    border-radius: 50%;
+    box-shadow: 20px 10px beige;
 }
 
 footer {
@@ -36,4 +43,5 @@ footer {
 #linkicon, #giticon {
     padding-top: 10px;
     height: 50px; 
+    
 }
