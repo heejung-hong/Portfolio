@@ -5,14 +5,14 @@
 
 .navbar {
     background-color: lemonchiffon;
-    border-bottom: 2px solid dimgray;
+    border-bottom: 2px solid gainsboro;
     position: fixed;
     top: 0%;
     width: 100%;
 }
 
 body {
-    background-color: lavenderblush;
+    background: linear-gradient(125deg,  mintcream 1%, lavenderblush 50%);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -30,7 +30,7 @@ p {
 
 footer {
     background-color: lemonchiffon;
-    border-top: 2px solid dimgray;
+    border-top: 2px solid gainsboro;
     height: 70px;
     text-align: center;
 }
