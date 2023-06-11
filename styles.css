@@ -30,7 +30,7 @@ p {
 
 #profile {
     border-radius: 50%;
-    box-shadow: 20px 10px beige;
+    box-shadow: 20px 10px 50px 10px beige;
 }
 
 footer {
