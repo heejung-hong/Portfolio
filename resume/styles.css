@@ -14,7 +14,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, mintcream 1%, lavender 80%);
+    background: linear-gradient(135deg, mintcream 1%, lavender 90%);
     display: flex;
     flex-direction: column;
     flex-grow: 1;

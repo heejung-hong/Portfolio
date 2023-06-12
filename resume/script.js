@@ -12,7 +12,7 @@
 
 // Resume PDF link
 document.getElementById('respdf').onclick = function() {
-    let pdf = document.createElement('IFRAME') // Creates html in javascript
+    let pdf = document.createElement('IFRAME')
     pdf.setAttribute('src', 'ResumePrivate.pdf') 
     document.body.appendChild(pdf).style.width = '65%'
     document.body.appendChild(pdf).style.height = '750px'
