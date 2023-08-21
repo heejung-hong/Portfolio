@@ -6,69 +6,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heejung Hong</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-   
-    <!-- ADD THE BOOTSTRAP CSS CDN BELOW -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Text+Me+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />   
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-lightt">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Heejung Hong</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="index.html" rel="noreferrer">Home</a>
-                    <a class="nav-link" href="about/index.html" rel="noreferrer">About</a>
-                    <a class="nav-link" href="resume/index.html" rel="noreferrer">Resume</a>
-                    <a class="nav-link" href="projects/index.html"rel="noreferrer">Projects</a>
-                </div>
-            </div>
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+            <a href="#resume" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Resume</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
         </div>
     </nav>
+    
     <!-- Page Content -->
-    <div class="container">
-        <!-- Portfolio Item Heading -->
-        <h1 class="my-4">Home</h1>
-        <br>
-        <br>
-        <!-- Portfolio Item Row -->
-        <div class="row">
-            <div class="col-md-6 col-sm-6 mb-4">    
-                <img id="profile" class="img-fluid" src="profile1.jpeg" alt="" />
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+  
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <h1 class="w3-jumbo"><b>Heejung Hong</b></h1>
+      <p>Frontend Software Engineer</p>
+      <img src="profile1.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+      <img src="profile1.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    </header>
+  
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <h2>About</h2>
+      <hr class="w3-opacity">
+      <p>I'm a Frontend Software Engineer who combines my fashion design roots with newfound frontend development prowess, to bring a blend of creativity and technical acumen to the digital realm.  My passion for design and coding converge to create captivating web experiences that harmonize style and functionality, ensuring every user interaction is a work of art.
+      </p>
+    
+      <div class="carousel-container">
+        <div class="carousel-button prev">
+            <span class="lnr lnr-chevron-left"></span>
+        </div>            
+        <div class="carousel-images">
+            <div class="images">
+                <p>My favorite indoor activity is Knitting.</p>
+                <img src="sweater1.jpeg" alt="pink sweater" class="picture">
             </div>
-            
-            <div class="col-md-6 col-sm-6 mb-4">
-                <p>I'm a Software Engineer Immersive student in Sunny Southern California
-                <br>
-                <br>
-                Welcome to my Portfolio!
-                </p>
-            </div>    
-            
+            <div class="images">
+                <p>My preferred outdoor activity is Golfing.</p>
+                <img src="golfcart.jpeg" alt="golf cart" class="picture">
+            </div>       
+            <div class="images">
+                <p>I have completed two LA Marathons but I prefer Golfing to Running.</p>
+                <img src="marathon.jpeg" alt="marathon finish line" class="picture">
+            </div>
+            <div class="images">
+                <p>Denim short designed by me.</p>
+                <img src="IMG_2963.JPG" alt="denim short" class="picture">
+            </div>
+            <div class="images">
+                <p>Denim bermuda designed by me.</p>
+                <img src="IMG_3357.JPG" alt="denim bermuda" class="picture">
+            </div>
+            <div class="images">
+                <p>Another handknit sweater.</p>
+                <img src="sweater2.jpeg" alt="green sweater" class="picture">
+            </div>
+            <div class="images">
+                <p>One last sweater pic.</p>
+                <img src="sweater3.jpeg" alt="ivory flower bobble sweater" class="picture">
+            </div>
+        </div>        
+        <div class="carousel-button next">
+            <span class="lnr lnr-chevron-right"></span>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <!-- /.container -->
-    <footer>
-        <a>
-            <img src="In-Blue-Logo.png.original.png" alt="linkedin icon" id="linkicon">
-        </a>
-        <a>
-            <img src="github-mark.png" alt="github icon" id="giticon">
-        </a>
-    </footer>
-    <!-- ADD THE BOOTSTRAP JS CDN BELOW -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    </div>
+    <!-- End About Section -->
 
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="resume" style="margin-bottom:64px">
+      <h2>Resume</h2>
+      <hr class="w3-opacity">
+  
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Los Angeles, US</p>
+        <!-- <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: heejung1180@outlook.com</p> -->
+      </div>
+      
+      <!-- Resume -->
+      <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+      <div class="row button">
+        <div class="col-md-8 col-sm-6 mb-4">
+            <button id="respdf">Resume PDF</button>
+        </div>
+      </div>
+    
+    </div>
+    <!-- End Contact Section -->  
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-32 w3-content" id="projects">
+        <h2 class="w3-text-grey">My Projects</h2>
+        <hr class="w3-opacity">
+    
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+                <p class="myElement">Beauty Organizer</p>
+            </div>
+    
+            <div class="w3-half">
+                <p class="myElement">JavaBook</p>
+            </div>
+
+            <div class="w3-half">
+                <p class="myElement">Book Guide</p>
+            </div>
+        <!-- End photo grid -->
+        </div>
+    
+    </div>
+    <!-- End Portfolio Section -->
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+      <a>
+        <img src="In-Blue-Logo.png.original.png" alt="linkedin icon" id="linkicon">
+    </a>
+    <a>
+        <img src="github-mark.png" alt="github icon" id="giticon">
+    </a>
+      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    
+    </footer>
+    <!-- End footer -->
+    </div>
+    <!-- END PAGE CONTENT -->
     <script src="./script.js"></script>
 </body>
 
