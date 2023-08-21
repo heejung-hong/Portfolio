@@ -10,39 +10,35 @@ function openNav() {
   }
 
 
-// Carousel
-const next = document.querySelector('.next');
-const prev = document.querySelector('.prev');
-const images = document.getElementsByClassName('images');
+// Slideshow
+let slideIndex = 1;
+showSlides(slideIndex);
 
-let currentImgIndex = 0;
-let previousImgIndex = 0;
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-next.addEventListener('click', () => {
-    previousImgIndex = currentImgIndex
-    currentImgIndex++
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    if(currentImgIndex >= images.length) {
-        console.log('Too high of an index! Going to reset to 0!')
-        currentImgIndex = 0;
-    }
-
-    images[previousImgIndex].style.display = 'none'
-    images[currentImgIndex].style.display = 'block'
-})
-
-prev.addEventListener('click', () => {
-    previousImgIndex = currentImgIndex
-    currentImgIndex--
-
-    if(currentImgIndex < 0) {
-        console.log('Too low of an index! Going to reset to 4!')
-        currentImgIndex = images.length - 1;
-    }
-
-    images[previousImgIndex].style.display = 'none'
-    images[currentImgIndex].style.display = 'block'
-})
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 
 
 // Resume PDF link

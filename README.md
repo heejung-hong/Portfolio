@@ -1,6 +1,6 @@
 Project #1
 
-Link to portfolio https://heejung1180.github.io/Portfolio/
+Link to portfolio https://heejung-hong.github.io/Portfolio/
 
 
 List of technologies used

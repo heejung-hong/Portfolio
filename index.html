@@ -13,30 +13,30 @@
 </head>
 
 <body>
-    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <nav class="w3-sidebar w3-white w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-white w3-xxxlarge w3-display-topright" style="padding:0 12px;">
             <i class="fa fa-remove"></i>
         </a>
         <div div class="w3-bar-block w3-center">
-            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-            <a href="#resume" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Resume</a>
-            <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-grey" onclick="closeNav()">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-grey" onclick="closeNav()">About</a>
+            <a href="#resume" class="w3-bar-item w3-button w3-text-grey w3-hover-grey" onclick="closeNav()">Resume</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-grey" onclick="closeNav()">Projects</a>
         </div>
     </nav>
     
     <!-- Page Content -->
-    <div class="w3-main w3-padding-large" style="margin-left:40%">
+    <div class="w3-main w3-padding-large">
 
     <!-- Menu icon to open sidebar -->
     <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
   
     <!-- Header -->
-    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <header class="w3-container w3-center" style="padding:10px 10px" id="home">
       <h1 class="w3-jumbo"><b>Heejung Hong</b></h1>
       <p>Frontend Software Engineer</p>
-      <img src="profile1.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-      <img src="profile1.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+      <!-- <img src="profile1.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;"> -->
+      <img id="profile" src="profile1.jpeg" class="w3-image" width="50%">
     </header>
   
     <!-- About Section -->
@@ -45,41 +45,76 @@
       <hr class="w3-opacity">
       <p>I'm a Frontend Software Engineer who combines my fashion design roots with newfound frontend development prowess, to bring a blend of creativity and technical acumen to the digital realm.  My passion for design and coding converge to create captivating web experiences that harmonize style and functionality, ensuring every user interaction is a work of art.
       </p>
-    
-      <div class="carousel-container">
+
+      <!-- Container for image gallery -->
+      <div class="container">
+        
+            <div class="mySlides">
+                <div class="numbertext">1 / 7</div>
+                <img src="sweater1.jpeg" alt="pink sweater" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 7</div>
+                <img src="sweater2.jpeg" alt="green sweater" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 7</div>
+                <img src="sweater3.jpeg" alt="ivory flower bobble sweater" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 7</div>
+                <img src="golfcart.jpeg" alt="golf cart" style="width:100%">
+            </div>       
+            <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <img src="marathon.jpeg" alt="marathon finish line" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="IMG_3357.JPG" alt="denim bermuda" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img src="IMG_2963.JPG" alt="denim short" style="width:100%">
+            </div>
+           
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="sweater1.jpeg" onclick="currentSlide(1)" alt="My favorite indoor activity is Knitting." style="width:100%">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="sweater2.jpeg" onclick="currentSlide(6)" alt="Another handknit sweater." style="width:100%">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="sweater3.jpeg" onclick="currentSlide(7)" alt="One last sweater pic." style="width:100%">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="golfcart.jpeg" onclick="currentSlide(2)" alt="My preferred outdoor activity is Golfing." style="width:100%">
+            </div>       
+            <div class="column">
+                <img class="demo cursor" src="marathon.jpeg" onclick="currentSlide(3)" alt="I have completed two LA Marathons but I prefer Golfing to Running." style="width:100%">
+            </div>
+            
+            <div class="column">
+                <img class="demo cursor" src="IMG_3357.JPG" onclick="currentSlide(5)" alt="Denim bermuda designed by me." style="width:100%">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="IMG_2963.JPG" onclick="currentSlide(4)" alt="Denim short designed by me." style="width:100%">
+            </div>
+            </div>
+        
         <div class="carousel-button prev">
             <span class="lnr lnr-chevron-left"></span>
-        </div>            
-        <div class="carousel-images">
-            <div class="images">
-                <p>My favorite indoor activity is Knitting.</p>
-                <img src="sweater1.jpeg" alt="pink sweater" class="picture">
-            </div>
-            <div class="images">
-                <p>My preferred outdoor activity is Golfing.</p>
-                <img src="golfcart.jpeg" alt="golf cart" class="picture">
-            </div>       
-            <div class="images">
-                <p>I have completed two LA Marathons but I prefer Golfing to Running.</p>
-                <img src="marathon.jpeg" alt="marathon finish line" class="picture">
-            </div>
-            <div class="images">
-                <p>Denim short designed by me.</p>
-                <img src="IMG_2963.JPG" alt="denim short" class="picture">
-            </div>
-            <div class="images">
-                <p>Denim bermuda designed by me.</p>
-                <img src="IMG_3357.JPG" alt="denim bermuda" class="picture">
-            </div>
-            <div class="images">
-                <p>Another handknit sweater.</p>
-                <img src="sweater2.jpeg" alt="green sweater" class="picture">
-            </div>
-            <div class="images">
-                <p>One last sweater pic.</p>
-                <img src="sweater3.jpeg" alt="ivory flower bobble sweater" class="picture">
-            </div>
-        </div>        
+        </div>         
         <div class="carousel-button next">
             <span class="lnr lnr-chevron-right"></span>
         </div>
@@ -93,15 +128,9 @@
       <h2>Resume</h2>
       <hr class="w3-opacity">
   
-      <div class="w3-section">
-        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Los Angeles, US</p>
-        <!-- <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: heejung1180@outlook.com</p> -->
-      </div>
       
       <!-- Resume -->
-      <button class="w3-button w3-light-grey w3-padding-large w3-section">
-        <i class="fa fa-download"></i> Download Resume
-      </button>
+      
       <div class="row button">
         <div class="col-md-8 col-sm-6 mb-4">
             <button id="respdf">Resume PDF</button>
