@@ -4,7 +4,7 @@ Link to portfolio https://heejung-hong.github.io/Portfolio/
 
 
 List of technologies used
-    1. Bootstrap
+    1. w3.css
     2. HTML
     3. CSS
     4. Javascript
