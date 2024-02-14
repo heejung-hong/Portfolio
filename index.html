@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heejung Hong</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./styles.css" />   
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,600,0,0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />       
 </head>
 
 <body>
 <nav class="w3-sidebar w3-white w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-white w3-xxlarge w3-display-topright" style="padding:0 12px;">
-        <i class="fa fa-remove"></i>
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-white w3-text-grey w3-xxlarge w3-display-topright" style="padding:0 12px;">
+        <span class="material-symbols-rounded">close</span>
     </a>
     <div div class="w3-bar-block w3-center">
         <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-grey" onclick="closeNav()">Home</a>
@@ -29,14 +29,16 @@
 <div class="w3-main w3-padding-large">
 
     <!-- Menu icon to open sidebar -->
-    <span class="w3-button w3-top w3-white w3-xlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    <span class="w3-button w3-top w3-xlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0; background-color: mintcream;" onclick="openNav()">
+        <span class="material-symbols-rounded">menu</span>
+    </span>
   
     <!-- Header -->
     <header class="w3-container w3-center" style="padding:10px 10px" id="home">
         <h1 class="w3-xxxlarge"><b>Heejung Hong</b></h1>
         <h3>Frontend Software Engineer</h3>
         <!-- <img src="profile1.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;"> -->
-        <img id="profile" src="profile.jpg" class="w3-card-4" style="margin:40px 40px" width="40%">
+        <img id="profile" src="./img/profile.jpg" class="w3-card-4" style="margin:40px 40px" width="40%">
     </header>
   
     <!-- About Section -->
@@ -51,32 +53,32 @@
             <div class="w3-card-4" style="width:100%">
             <div class="mySlides">
                 <div class="numbertext">1 / 7</div>
-                <img src="sweater1.jpg" alt="pink sweater" style="width:100%">
+                <img src="./img/sweater1.jpg" alt="pink sweater" style="width:100%">
             </div>
             <div class="mySlides">
                 <div class="numbertext">2 / 7</div>
-                <img src="sweater2.jpg" alt="green sweater" style="width:100%">
+                <img src="./img/sweater2.jpg" alt="green sweater" style="width:100%">
             </div>
             <div class="mySlides">
                 <div class="numbertext">3 / 7</div>
-                <img src="sweater3.jpg" alt="ivory flower bobble sweater" style="width:100%">
+                <img src="./img/sweater3.jpg" alt="ivory flower bobble sweater" style="width:100%">
             </div>
             <div class="mySlides">
                 <div class="numbertext">4 / 7</div>
-                <img src="golf.jpg" alt="golf cart" style="width:100%">
+                <img src="./img/golf.jpg" alt="golf cart" style="width:100%">
             </div>       
             <div class="mySlides">
                 <div class="numbertext">5 / 7</div>
-                <img src="marathon.jpg" alt="marathon finish line" style="width:100%">
+                <img src="./img/marathon.jpg" alt="marathon finish line" style="width:100%">
             </div>
             
             <div class="mySlides">
                 <div class="numbertext">6 / 7</div>
-                <img src="DenimBermuda.jpg" alt="denim bermuda" style="width:100%">
+                <img src="./img/DenimBermuda.jpg" alt="denim bermuda" style="width:100%">
             </div>
             <div class="mySlides">
                 <div class="numbertext">7 / 7</div>
-                <img src="DenimShort.jpg" alt="denim short" style="width:100%">
+                <img src="./img/DenimShort.jpg" alt="denim short" style="width:100%">
             </div>
             
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -88,25 +90,25 @@
 
             <div class="row">
                 <div class="column">
-                    <img class="demo cursor" src="sweater1.jpg" onclick="currentSlide(1)" alt="My favorite indoor activity is Knitting." style="width:100%">
+                    <img class="demo cursor" src="./img/sweater1.jpg" onclick="currentSlide(1)" alt="My favorite indoor activity is Knitting." style="width:100%">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="sweater2.jpg" onclick="currentSlide(2)" alt="Another handknit sweater." style="width:100%">
+                    <img class="demo cursor" src="./img/sweater2.jpg" onclick="currentSlide(2)" alt="Another handknit sweater." style="width:100%">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="sweater3.jpg" onclick="currentSlide(3)" alt="One last sweater pic." style="width:100%">
+                    <img class="demo cursor" src="./img/sweater3.jpg" onclick="currentSlide(3)" alt="One last sweater pic." style="width:100%">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="golf.jpg" onclick="currentSlide(4)" alt="My preferred outdoor activity is Golfing." style="width:100%">
+                    <img class="demo cursor" src="./img/golf.jpg" onclick="currentSlide(4)" alt="My preferred outdoor activity is Golfing." style="width:100%">
                 </div>       
                 <div class="column">
-                    <img class="demo cursor" src="marathon.jpg" onclick="currentSlide(5)" alt="I have completed two LA Marathons." style="width:100%">
+                    <img class="demo cursor" src="./img/marathon.jpg" onclick="currentSlide(5)" alt="I have completed two LA Marathons." style="width:100%">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="DenimBermuda.jpg" onclick="currentSlide(6)" alt="Denim bermuda designed by me." style="width:100%">
+                    <img class="demo cursor" src="./img/DenimBermuda.jpg" onclick="currentSlide(6)" alt="Denim bermuda designed by me." style="width:100%">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="DenimShort.jpg" onclick="currentSlide(7)" alt="Denim short designed by me." style="width:100%">
+                    <img class="demo cursor" src="./img/DenimShort.jpg" onclick="currentSlide(7)" alt="Denim short designed by me." style="width:100%">
                 </div>
             </div>
             
@@ -130,17 +132,17 @@
     
         <div id="main" class="w3-container" style="padding:10px">
             <div class="w3-container" style="padding:10px">
-                <div id="beauty" class="w3-card-4 w3-hover-opacity" style="width:70%">
-                    <img src="BeautyOrganizer.png" alt="screenshot of Beauty Organizer" width="100%">
+                <div id="bookguide" class="w3-card-4 w3-hover-opacity" style="width:70%">
+                    <img src="./img/BookGuide.png" alt="screenshot of BookGuide" width="100%">
                     <div class="w3-container w3-center">
-                        <p>Beauty Organizer</p>
-                        <p>MEN-Stack CRUD App, using Mongoose, Express, Node.js, EJS, and CSS</p>
+                        <p>Book Guide</p>
+                        <p>MERN-Stack CRUD App, using Mongoose, Express, React, Node.js, NY Book API, SemanticUI, and Adobe Fresco</p>
                     </div>                
                 </div>
             </div>
             <div class="w3-container" style="padding:10px">
                 <div id="javabook" class="w3-card-4 w3-hover-opacity" style="width:70%">
-                    <img src="JavaBook.png" alt="screenshot of JavaBook" width="100%">
+                    <img src="./img/JavaBook.png" alt="screenshot of JavaBook" width="100%">
                     <div class="w3-container w3-center">
                         <p>JavaBook</p>
                         <p>Full-Stack CRUD Django App, using PostgreSQL, MaterializeCSS, and Adobe Fresco</p>
@@ -148,16 +150,15 @@
                 </div>
             </div>
             <div class="w3-container" style="padding:10px">
-                <div id="bookguide" class="w3-card-4 w3-hover-opacity" style="width:70%">
-                    <img src="BookGuide.png" alt="screenshot of BookGuide" width="100%">
+                <div id="beauty" class="w3-card-4 w3-hover-opacity" style="width:70%">
+                    <img src="./img/BeautyOrganizer.png" alt="screenshot of Beauty Organizer" width="100%">
                     <div class="w3-container w3-center">
-                        <p>Book Guide</p>
-                        <p>MERN-Stack CRUD App, using Mongoose, Express, React, Node.js, NY Book API, SemanticUI, and Adobe Fresco</p>
+                        <p>Beauty Organizer</p>
+                        <p>MEN-Stack CRUD App, using Mongoose, Express, Node.js, EJS, and CSS</p>
                     </div>                
                 </div>
-            </div>
+            </div>                      
         </div>
-
     </div>
     <!-- End Portfolio Section -->
 
@@ -173,7 +174,7 @@
         </div> -->
       
         <div class="pdfContainer">
-            <iframe class="responsive-iframe" src="PublicResume.pdf"></iframe>
+            <iframe class="responsive-iframe" src="./img/PublicResume.pdf"></iframe>
         </div>            
          
     </div>
@@ -184,8 +185,8 @@
 <!-- Footer -->
 <footer class="w3-container w3-padding-40 w3-center w3-opacity w3-xlarge" style="margin:24px">
     <hr class="w3-opacity">
-    <img class="w3-hover-shadow" src="In-Blue-Logo.png.original.png" alt="linkedin icon" id="linkicon" style="margin-right: 5px;">
-    <img class="w3-hover-shadow" src="github-mark.png" alt="github icon" id="giticon" style="margin-left: 5px;">
+    <img class="w3-hover-shadow" src="./img/In-Blue-Logo.png.original.png" alt="linkedin icon" id="linkicon" style="margin-right: 5px;">
+    <img class="w3-hover-shadow" src="./img/github-mark.png" alt="github icon" id="giticon" style="margin-left: 5px;">
     <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 <!-- End footer -->

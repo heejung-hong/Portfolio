@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, mintcream 10%, honeydew 40%);
+    background: mintcream 10%;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
