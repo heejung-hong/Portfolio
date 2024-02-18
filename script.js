@@ -9,7 +9,6 @@ function openNav() {
     document.getElementById("mySidebar").style.display = "none";
   }
 
-
 // Slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -40,21 +39,6 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-
-function resumePDF() {
-  document.getElementById("resPDF").style.display = "block"
-  document.getElementById("PDF").style.display = "none"
-  document.getElementById("openPDF").style.display = "none"
-  document.getElementById("closePDF").style.display = "inline"
-};
-
-function closePDF() {
-  document.getElementById("resPDF").style.display = "none"
-  document.getElementById("PDF").style.display = "block"
-  document.getElementById("openPDF").style.display = "inline"
-  document.getElementById("closePDF").style.display = "none"
-}  
-
 // DOM for Project
 document.getElementById('beauty').onclick = function() {
   window.open("https://beauty-organizer-078af2d08df4.herokuapp.com/");
@@ -68,6 +52,20 @@ document.getElementById('bookguide').onclick = function() {
   window.open("https://book-guide-32207e9c7f37.herokuapp.com/");
 };
 
+// DOM for Resume
+function openPDF() {
+  document.getElementById("resPDF").style.display = "block"
+  document.getElementById("resIMG").style.display = "none"
+  document.getElementById("openPDF").style.display = "none"
+  document.getElementById("closePDF").style.display = "inline"
+};
+
+function closePDF() {
+  document.getElementById("resPDF").style.display = "none"
+  document.getElementById("resIMG").style.display = "block"
+  document.getElementById("openPDF").style.display = "inline"
+  document.getElementById("closePDF").style.display = "none"
+}  
 
 // DOM for Footer Icons
 document.getElementById('linkicon').onclick = function() {

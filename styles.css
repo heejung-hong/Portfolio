@@ -24,54 +24,15 @@ h3, p {
     color: dimgrey;
 }
 
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
+.w3-row-padding img {
+    margin-bottom: 12px
+}
 
-
-#profile {
+#profilePic {
     border-radius: 50%;
     box-shadow: 20px 10px 50px 10px beige;
 }
-
-#PDFres {
-    display: block;
-}
-
-/* Container for iframe */
-.pdfContainer {
-    position: relative;
-    overflow: hidden;
-    width: 80%;
-    padding-top: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* To make iframe responsive */
-.responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#resPDF {
-    display: none;
-}
-
-/* Container for resume */
-.resumeContainer {
-    width: 80%;
-    height: 100%;
-}
-
-#PDF {
-    display: block;
-}
-  
+ 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
 position: relative;
@@ -96,11 +57,11 @@ cursor: pointer;
 position: absolute;
 top: 40%;
 width: auto;
-padding: 16px;
+padding: 1px;
 margin-top: -50px;
 color: dimgrey;
 font-weight: bold;
-font-size: 20px;
+font-size: 5vmax;
 border-radius: 0 3px 3px 0;
 user-select: none;
 -webkit-user-select: none;
@@ -119,7 +80,7 @@ background-color:lemonchiffon;
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+.numberText {
 color: dimgrey;
 font-size: 12px;
 padding: 8px 12px;
@@ -148,7 +109,7 @@ float: left;
 width: 14.26%;
 }
 
-/* Add a transparency effect for thumnbail images */
+/* Add a transparency effect for thumbnail images */
 .demo {
 opacity: 0.3;
 }
@@ -163,7 +124,7 @@ opacity: 1;
 }
 
 #openPDF {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Abril Fatface', cursive;
     background-color: lightcyan;
     margin: 30px;
     padding: 5px 10px;
@@ -174,7 +135,7 @@ opacity: 1;
 }
 
 #closePDF {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Abril Fatface', cursive;
     background-color: lightcyan;
     margin: 30px;
     padding: 5px 10px;
@@ -184,15 +145,44 @@ opacity: 1;
     display: none;
 }
 
-iframe {
-    margin: 0 auto;
+/* Container for iframe */
+#resPDF {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    padding-top: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+/* To make iframe responsive */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Container for resume */
+#resIMG {
     display: block;
+}
+
+.resumeIMG {
+    width: 80%;
+    height: 100%;
 }
 
 footer {    
     text-align: center;
 }
 
-#linkicon, #giticon {
-    height: 30px;     
+#linkedinIcon, #githubIcon {
+    height: 30px;
+    margin: 0 7px;
+    cursor: pointer;     
 }
