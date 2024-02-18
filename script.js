@@ -41,11 +41,19 @@ function showSlides(n) {
 }
 
 
-// document.getElementById('respdf').onclick = function() {
-//   let pdf = document.getElementsByClassName('pdfContainer')
-//   pdf.style.visibility = 'visible'
-// };
-  
+function resumePDF() {
+  document.getElementById("resPDF").style.display = "block"
+  document.getElementById("PDF").style.display = "none"
+  document.getElementById("openPDF").style.display = "none"
+  document.getElementById("closePDF").style.display = "inline"
+};
+
+function closePDF() {
+  document.getElementById("resPDF").style.display = "none"
+  document.getElementById("PDF").style.display = "block"
+  document.getElementById("openPDF").style.display = "inline"
+  document.getElementById("closePDF").style.display = "none"
+}  
 
 // DOM for Project
 document.getElementById('beauty').onclick = function() {
