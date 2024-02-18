@@ -165,18 +165,26 @@
     <!-- Resume Section -->
     <div class="w3-padding-32 w3-content w3-text-grey" id="resume" style="margin-bottom:64px">
         <h2>Resume</h2>
-        <hr class="w3-opacity">            
-        <!-- Resume -->        
-        <!-- <div class="w3-container w3-center" style="padding:10px 10px">
+        <hr class="w3-opacity">
+
+        <!-- Resume -->
+        <div class="w3-container w3-center">     
             <div class="col-md-8 col-sm-6 mb-4">
-                <button class="w3-hover-shadow" id="respdf">Resume PDF</button>
+                <button class="w3-hover-shadow" id="openPDF" onclick="resumePDF()">Print PDF</button>
             </div>
-        </div> -->
+
+            <div class="col-md-8 col-sm-6 mb-4">
+                <button class="w3-hover-shadow" id="closePDF" onclick="closePDF()">Close PDF</button>
+            </div>
       
-        <div class="pdfContainer">
-            <iframe class="responsive-iframe" src="./img/PublicResume.pdf"></iframe>
-        </div>            
-         
+            <div class="pdfContainer" id="resPDF">
+                <iframe class="responsive-iframe" src="./img/resume.pdf"></iframe>
+            </div>
+        
+            <div id="PDF">
+                <img class="resumeContainer" src="./img/resume.png" >
+            </div>
+        </div>    
     </div>
     <!-- End Resume Section --> 
 </div>
