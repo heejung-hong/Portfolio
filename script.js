@@ -52,6 +52,18 @@ document.getElementById('bookguide').onclick = function() {
   window.open("https://book-guide-32207e9c7f37.herokuapp.com/");
 };
 
+document.getElementById('pod-request').onclick = function() {
+  window.open("https://heejung-hong.github.io/pod-request-access/");
+};
+
+document.getElementById('newsletter').onclick = function() {
+  window.open("https://heejung-hong.github.io/newsletter-sign-up-form-with-success-message/");
+};
+
+document.getElementById('results-summary').onclick = function() {
+  window.open("https://heejung-hong.github.io/results-summary-component/");
+};
+
 // DOM for Resume
 function openPDF() {
   document.getElementById("resPDF").style.display = "block"

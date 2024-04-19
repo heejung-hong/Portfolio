@@ -1,8 +1,5 @@
 ## Portfolio
 
-### Link to portfolio 
-- https://heejung-hong.github.io/Portfolio/
-
 
 ### List of technologies used
 1. w3.css
