@@ -71,14 +71,12 @@ document.getElementById("pod-request").onclick = function () {
   window.open("https://heejung-hong.github.io/pod-request-access/");
 };
 
-document.getElementById("newsletter").onclick = function () {
-  window.open(
-    "https://heejung-hong.github.io/newsletter-sign-up-form-with-success-message/"
-  );
+document.getElementById("single-portfolio").onclick = function () {
+  window.open("https://heejung-hong.github.io/single-page-design-portfolio/");
 };
 
-document.getElementById("results-summary").onclick = function () {
-  window.open("https://heejung-hong.github.io/results-summary-component/");
+document.getElementById("fylo").onclick = function () {
+  window.open("https://heejung-hong.github.io/fylo-dark-theme/");
 };
 
 // DOM for Resume
