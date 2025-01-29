@@ -47,10 +47,6 @@ document.getElementById("beauty").onclick = function () {
   window.open("https://beauty-organizer-078af2d08df4.herokuapp.com/");
 };
 
-document.getElementById("javabook").onclick = function () {
-  window.open("https://java-book-a57dc0cae3ed.herokuapp.com/");
-};
-
 document.getElementById("bookguide").onclick = function () {
   window.open("https://book-guide-32207e9c7f37.herokuapp.com/");
 };
