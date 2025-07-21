@@ -43,16 +43,8 @@ function showSlides(n) {
 }
 
 // DOM for Project
-document.getElementById("beauty").onclick = function () {
-  window.open("https://beauty-organizer-078af2d08df4.herokuapp.com/");
-};
-
-document.getElementById("bookguide").onclick = function () {
-  window.open("https://book-guide-32207e9c7f37.herokuapp.com/");
-};
-
-document.getElementById("space-tourism").onclick = function () {
-  window.open("https://heejung-hong.github.io/space-tourism-website/");
+document.getElementById("commonground").onclick = function () {
+  window.open("https://commongroundnotary.com/");
 };
 
 document.getElementById("age-calculator").onclick = function () {
