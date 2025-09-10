@@ -73,10 +73,10 @@
       <!-- Menu icon to open sidebar -->
       <span
         class="w3-top w3-xlarge"
-        style="width: auto; right: 0; background-color: mintcream"
+        style="width: auto; right: 0; background-color: #ffffff00;"
       >
         <span
-          style="font-size: 36px; margin: 2vmax"
+          style="font-size: 40px; margin: 2vmax"
           class="material-symbols-rounded w3-text-grey w3-hover-text-black cursor"
           onclick="openNav()"
           >menu</span
@@ -89,15 +89,13 @@
         style="padding: 10px 10px"
         id="home"
       >
-        <h1 class="w3-xxxlarge"><b>Heejung Hong</b></h1>
-        <h3>Frontend Software Engineer</h3>
+        <h1 class="w3-xxxlarge w3-animate-opacity"><b>Heejung Hong</b></h1>
+        <h3 class="w3-animate-opacity">Web Developer</h3>
         <!-- <img src="profile1.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;"> -->
         <img
+          src="./img/profilepic.png"
+          class="w3-image w3-animate-opacity"
           id="profilePic"
-          src="./img/profile.jpg"
-          class="w3-card-4"
-          style="margin: 40px 40px"
-          width="40%"
         />
       </header>
 
@@ -106,79 +104,80 @@
         <h2 class="w3-text-grey">My Projects</h2>
         <hr class="w3-opacity" />
         <div class="w3-row-padding" style="padding: 30px 30px">
-          <div class="w3-third">
-            <div
-              id="commonground"
-              class="w3-card-4 w3-hover-opacity"
-              style="width: 70%; margin-bottom: 20px"
+          <div class="w3-half">
+            <div              
+              class="w3-card-2"
+              style="margin-bottom: 20px"
             >
               <img
                 src="./img/commonground.png"
                 alt="commonground mobile notary landing page"
                 width="100%"
+                id="commonground"
+                class="w3-hover-opacity cursor"
               />
               <div class="w3-container w3-center">
                 <p style="font-size: 18px">Custom theme Wordpress website</p>
-                <p style="font-size: 16px">
+                <p style="font-size: 16px; padding-bottom: 20px;">
                   Desktop and Mobile view, using HTML, CSS, and plugins.
                 </p>
               </div>
             </div>
-          </div>
-
-          <div class="w3-third">
             <div
-              id="space-tourism"
-              class="w3-card-4 w3-hover-opacity"
-              style="width: 70%; margin-bottom: 20px"
+              class="w3-card-2"
+              style="margin-bottom: 20px"
             >
               <img
-                src="./img/space-tourism.jpg"
+                src="./img/space-tourism.png"
                 alt="space tourism landing page"
                 width="100%"
+                id="space-tourism"
+                class="w3-hover-opacity cursor"
               />
               <div class="w3-container w3-center">
                 <p style="font-size: 18px">
                   Frontend Mentor - Space Tourism Website
                 </p>
-                <p style="font-size: 16px">
+                <p style="font-size: 16px; padding-bottom: 20px;">
                   Desktop, Tablet, and Mobile view, using HTML, SCSS, and
                   JavaScript
                 </p>
               </div>
             </div>
-            <div
-              id="age-calculator"
-              class="w3-card-4 w3-hover-opacity"
-              style="width: 70%; margin-bottom: 20px"
+            <div              
+              class="w3-card-2"
+              style="margin-bottom: 20px"
             >
               <img
-                src="./img/age-calculator.jpg"
+                src="./img/age-calculator.png"
                 alt="age calculator"
                 width="100%"
+                id="age-calculator"
+                class="w3-hover-opacity cursor"
               />
               <div class="w3-container w3-center">
                 <p style="font-size: 18px">Frontend Mentor - Age Calculator</p>
-                <p style="font-size: 16px">
+                <p style="font-size: 16px; padding-bottom: 20px;">
                   Desktop and Mobile view, using Vite React, and Tailwind CSS
                 </p>
               </div>
             </div>
-            <div
-              id="insure-landing"
-              class="w3-card-4 w3-hover-opacity"
-              style="width: 70%; margin-bottom: 20px"
+            <div              
+              class="w3-card-2"
+              style="margin-bottom: 20px"
             >
               <img
-                src="./img/insure-landing.jpg"
+                src="./img/insure-landing.png"
                 alt="insure landing page"
                 width="100%"
+                id="insure-landing"
+                class="w3-hover-opacity cursor"
               />
               <div class="w3-container w3-center">
                 <p style="font-size: 18px">
                   Frontend Mentor - Insure Landing Page
                 </p>
-                <p style="font-size: 16px">
+                <p style="font-size: 16px; padding-bottom: 20px;">
                   Desktop and Mobile view, using Vite React, Tailwind CSS, and
                   Fontawesome Icons
                 </p>
@@ -186,60 +185,63 @@
             </div>
           </div>
 
-          <div class="w3-third">
-            <div
-              id="pod-request"
-              class="w3-card-4 w3-hover-opacity"
-              style="width: 70%; margin-bottom: 20px"
+          <div class="w3-half">
+            <div              
+              class="w3-card-2"
+              style="margin-bottom: 20px"
             >
               <img
-                src="./img/pod-request.jpg"
+                src="./img/pod-request.png"
                 alt="Pod request access landing page"
                 width="100%"
+                id="pod-request"
+                class="w3-hover-opacity cursor"
               />
               <div class="w3-container w3-center">
                 <p style="font-size: 18px">
                   Frontend Mentor - Pod Request Access Landing Page
                 </p>
-                <p style="font-size: 16px">
+                <p style="font-size: 16px; padding-bottom: 20px;">
                   Desktop, Tablet, and Mobile view, using HTML, CSS, JavaScript,
                   and Flexbox
                 </p>
               </div>
             </div>
-            <div
-              id="single-portfolio"
-              class="w3-card-4 w3-hover-opacity"
-              style="width: 70%; margin-bottom: 20px"
+            <div              
+              class="w3-card-2"
+              style="margin-bottom: 20px"
             >
               <img
                 src="./img/single-page-portfolio.png"
                 alt="homepage of single page design portfolio"
                 width="100%"
+                id="single-portfolio"
+                class="w3-hover-opacity cursor"
               />
               <div class="w3-container w3-center">
                 <p style="font-size: 18px">
                   Frontend Mentor - Single Page Design Portfolio
                 </p>
-                <p style="font-size: 16px">
+                <p style="font-size: 16px; padding-bottom: 20px;">
                   Desktop and Mobile view with slideshow, using HTML, Tailwind
                   CSS, JavaScript, and CSS Grid
                 </p>
               </div>
             </div>
-            <div
-              id="fylo"
-              class="w3-card-4 w3-hover-opacity"
-              style="width: 70%; margin-bottom: 20px"
+            <div              
+              class="w3-card-2"
+              style="margin-bottom: 20px"
             >
               <img
                 src="./img/fylo-dk-theme.png"
                 alt="Fylo company landing page"
                 width="100%"
+                id="fylo"
+                class="w3-hover-opacity cursor"
               />
               <div class="w3-container w3-center">
                 <p style="font-size: 18px">Frontend Mentor - Fylo Dark Theme</p>
-                <p style="font-size: 16px">
+                <p style="font-size: 16px; padding-bottom: 20px;">
                   Desktop and Mobile view, using HTML, and Tailwind CSS
                 </p>
               </div>
@@ -281,7 +283,7 @@
           </div>
 
           <div id="resPDF">
-            <iframe class="responsive-iframe" src="./img/resume.pdf"></iframe>
+            <iframe class="responsive-iframe" src="./img/resume.png"></iframe>
           </div>
 
           <div id="resIMG">
@@ -292,7 +294,7 @@
       <!-- End Resume Section -->
 
       <!-- About Section -->
-      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <div class="w3-content w3-text-grey w3-padding-32" id="about">
         <h2>About</h2>
         <hr class="w3-opacity" />
         <p class="w3-container" style="padding: 30px 30px">
@@ -306,11 +308,11 @@
 
         <!-- Container for image gallery -->
         <div class="container">
-          <div class="w3-card-4" style="width: 100%">
+          <div class="w3-card-2" style="width: 100%">
             <div class="mySlides">
               <div class="numberText">1 / 7</div>
               <img
-                src="./img/sweater1.jpg"
+                src="./img/sweater1.png"
                 alt="pink sweater"
                 style="width: 100%"
               />
@@ -318,7 +320,7 @@
             <div class="mySlides">
               <div class="numberText">2 / 7</div>
               <img
-                src="./img/sweater2.jpg"
+                src="./img/sweater2.png"
                 alt="green sweater"
                 style="width: 100%"
               />
@@ -326,19 +328,19 @@
             <div class="mySlides">
               <div class="numberText">3 / 7</div>
               <img
-                src="./img/sweater3.jpg"
+                src="./img/sweater3.png"
                 alt="ivory flower bobble sweater"
                 style="width: 100%"
               />
             </div>
             <div class="mySlides">
               <div class="numberText">4 / 7</div>
-              <img src="./img/golf.jpg" alt="golf cart" style="width: 100%" />
+              <img src="./img/golf.png" alt="golf cart" style="width: 100%" />
             </div>
             <div class="mySlides">
               <div class="numberText">5 / 7</div>
               <img
-                src="./img/marathon.jpg"
+                src="./img/marathon.png"
                 alt="marathon finish line"
                 style="width: 100%"
               />
@@ -347,7 +349,7 @@
             <div class="mySlides">
               <div class="numberText">6 / 7</div>
               <img
-                src="./img/DenimBermuda.jpg"
+                src="./img/DenimBermuda.png"
                 alt="denim bermuda"
                 style="width: 100%"
               />
@@ -355,7 +357,7 @@
             <div class="mySlides">
               <div class="numberText">7 / 7</div>
               <img
-                src="./img/DenimShort.jpg"
+                src="./img/DenimShort.png"
                 alt="denim short"
                 style="width: 100%"
               />
@@ -380,7 +382,7 @@
               <div class="column">
                 <img
                   class="demo cursor"
-                  src="./img/sweater1.jpg"
+                  src="./img/sweater1.png"
                   onclick="currentSlide(1)"
                   alt="My favorite indoor activity is Knitting."
                   style="width: 100%"
@@ -389,7 +391,7 @@
               <div class="column">
                 <img
                   class="demo cursor"
-                  src="./img/sweater2.jpg"
+                  src="./img/sweater2.png"
                   onclick="currentSlide(2)"
                   alt="Another handknit sweater."
                   style="width: 100%"
@@ -398,7 +400,7 @@
               <div class="column">
                 <img
                   class="demo cursor"
-                  src="./img/sweater3.jpg"
+                  src="./img/sweater3.png"
                   onclick="currentSlide(3)"
                   alt="One last sweater pic."
                   style="width: 100%"
@@ -407,7 +409,7 @@
               <div class="column">
                 <img
                   class="demo cursor"
-                  src="./img/golf.jpg"
+                  src="./img/golf.png"
                   onclick="currentSlide(4)"
                   alt="My preferred outdoor activity is Golfing."
                   style="width: 100%"
@@ -416,7 +418,7 @@
               <div class="column">
                 <img
                   class="demo cursor"
-                  src="./img/marathon.jpg"
+                  src="./img/marathon.png"
                   onclick="currentSlide(5)"
                   alt="I have completed two LA Marathons."
                   style="width: 100%"
@@ -425,7 +427,7 @@
               <div class="column">
                 <img
                   class="demo cursor"
-                  src="./img/DenimBermuda.jpg"
+                  src="./img/DenimBermuda.png"
                   onclick="currentSlide(6)"
                   alt="Denim bermuda designed by me."
                   style="width: 100%"
@@ -434,7 +436,7 @@
               <div class="column">
                 <img
                   class="demo cursor"
-                  src="./img/DenimShort.jpg"
+                  src="./img/DenimShort.png"
                   onclick="currentSlide(7)"
                   alt="Denim short designed by me."
                   style="width: 100%"

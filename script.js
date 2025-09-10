@@ -47,6 +47,10 @@ document.getElementById("commonground").onclick = function () {
   window.open("https://commongroundnotary.com/");
 };
 
+document.getElementById("space-tourism").onclick = function () {
+  window.open("https://heejung-hong.github.io/space-tourism-website/");
+};
+
 document.getElementById("age-calculator").onclick = function () {
   window.open("https://heejung-hong.github.io/age-calculator-app/");
 };
